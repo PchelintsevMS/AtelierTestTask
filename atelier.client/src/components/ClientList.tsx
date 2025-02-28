@@ -14,7 +14,7 @@ const ClientList: React.FC<ClientListProps> = ({ onClientSelect }) => {
     }, []);
 
     const fetchClients = async () => {
-        const response = await fetch('/clients');
+        const response = await fetch('http://localhost:5234/api/clients');
         if (response.ok) {
             const data = await response.json();
             setClients(data);

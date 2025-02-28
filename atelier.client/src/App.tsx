@@ -1,9 +1,9 @@
 import * as React from "react";
-import { useState } from 'react';
-import ClientList from './components/ClientList';
-import ClientDetails from './components/ClientID';
-import AddClientForm from './components/ClientAdd';
-import './App.css';
+import { useState } from "react";
+import ClientList from "./components/ClientList";
+import ClientDetails from "./components/ClientDetails";
+import AddClientForm from "./components/ClientAdd";
+import "./App.css";
 
 const App: React.FC = () => {
     const [view, setView] = useState<"add" | "list" | "details">("list");

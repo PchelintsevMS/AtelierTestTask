@@ -29,7 +29,7 @@ const ClientAdd: React.FC<ClientAddFormProps> = ({ onClientAdded }) => {
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        const response = await fetch('/clients', {
+        const response = await fetch('http://localhost:5234/api/clients', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
